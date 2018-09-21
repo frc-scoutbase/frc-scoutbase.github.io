@@ -1,0 +1,137 @@
+
+form
+{
+    margin: 1em;
+}
+
+form input
+{
+    border: 1px solid black;
+    margin: 0.4em;
+    padding: 0.7em;
+    border-radius: 0.4em;
+    background: #013f8a;
+    color: white;
+}
+
+form button
+{
+    background: #4c25a8;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    margin: 0.25em;
+    border-radius: 1em;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+form input[type="submit"]
+{
+    padding: 1em;
+    border-radius: 0.6em;
+    margin: 2.5% auto;
+    width: 95%;
+}
+
+form fieldset
+{
+    margin: 1em;
+    border-radius: 0.7em;
+}
+
+form fieldset fieldset
+{
+    margin: 0.2em;
+}
+
+form fieldset fieldset legend
+{
+    text-align: left;
+}
+
+
+form label
+{
+    font-weight: bold;
+    display: block;
+    color: #44309b;
+}
+
+form legend
+{
+    font-weight: bolder;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+form input
+{
+    display: block;
+}
+
+form input[type="text"]
+{
+    width: 100%;
+}
+
+form label[for="checkbox"]
+{
+    float: right;
+    font-size: 1em;
+    width: calc(100% - 50px);
+}
+
+form input[type="checkbox"]
+{
+    float: left;
+    margin: 0;
+    height: 1em;
+    width: 50px;
+}
+
+form label[for="radio"]
+{
+    float: right;
+    font-size: 1em;
+    width: calc(100% - 50px);
+}
+
+form input[type="radio"]
+{
+    float: left;
+    margin: 0;
+    height: 1em;
+    width: 50px;
+}
+
+form input[type="number"]
+{
+    display: inline;
+}
+
+form textarea
+{
+    width: calc(100% - 0.8em);
+    height: 75px;
+    border: 2px solid black;
+    margin: 0.4em;
+    padding: 0.6em;
+    border-radius: 0.6em;
+    background: #ffffff;
+}
+
+form fieldset
+{
+    background: #eeeeeedd;
+}
+
+@media (min-width: 800px)
+{
+    form
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

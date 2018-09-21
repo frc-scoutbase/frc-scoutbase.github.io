@@ -5,7 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>VictorVue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <script src="../JSFN.js"></script>
+    <script src="../SFDK.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <title>Scoutbase Vue</title>
+    <style>
+      canvas
+      {
+        max-width: 500px;
+        max-height: 10%;
+        background: #fffd;
+        margin: 0 auto;
+      }
+      .row
+      {
+        background: linear-gradient(135deg, #2d2b8a, #801a77);
+        padding: 2em 1em 2em 1em;
+        border-radius: 0.7em;
+        margin-bottom: 1em;
+      }
+      .row canvas:first-of-type
+      {
+        border-radius: 0.5em 0.5em 0em 0em;
+      }
+      .row canvas:last-child
+      {
+        border-radius: 0em 0em 0.5em 0.5em;
+      }
+      @media(min-width: 800px)
+      {
+        .row
+        {
+          padding-right: 0px;
+          padding-left: 0px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 1fr 4fr 1fr;
+        }
+        .row canvas
+        {
+          grid-row: 2/3;
+          border-radius: 0.5em !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>
