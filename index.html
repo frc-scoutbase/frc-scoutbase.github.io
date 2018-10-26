@@ -71,6 +71,41 @@
             text-align: center;
         }
     </style>
+    <link rel="manifest" href="manifest.json">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Scoutbase">
+        <meta name="apple-mobile-web-app-title" content="Scoutbase">
+        <meta name="theme-color" content="#0e003e">
+        <meta name="msapplication-navbutton-color" content="#0e003e">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="msapplication-starturl" content="/application">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" sizes="72x72" href="/application/img/icons/icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/application/img/icons/icon-72x72.png">
+        <link rel="icon" sizes="96x96" href="/application/img/icons/icon-96x96.png">
+        <link rel="apple-touch-icon" sizes="96x96" href="/application/img/icons/icon-96x96.png">
+        <link rel="icon" sizes="128x128" href="/application/img/icons/icon-128x128.png">
+        <link rel="apple-touch-icon" sizes="128x128" href="/application/img/icons/icon-128x128.png">
+        <link rel="icon" sizes="144x144" href="/application/img/icons/icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/application/img/icons/icon-144x144.png">
+        <link rel="icon" sizes="152x152" href="/application/img/icons/icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/application/img/icons/icon-152x152.png">
+        <link rel="icon" sizes="192x192" href="/application/img/icons/icon-192x192.png">
+        <link rel="apple-touch-icon" sizes="192x192" href="/application/img/icons/icon-192x192.png">
+        <link rel="icon" sizes="384x384" href="/application/img/icons/icon-384x384.png">
+        <link rel="apple-touch-icon" sizes="384x384" href="/application/img/icons/icon-384x384.png">
+        <link rel="icon" sizes="512x512" href="/application/img/icons/icon-512x512.png">
+        <link rel="apple-touch-icon" sizes="512x512" href="/application/img/icons/icon-512x512.png">
+        <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css>
+        <script>
+            if ('serviceWorker'in navigator) {
+                window.addEventListener('load', ()=>{
+                    navigator.serviceWorker.register('/application/service-worker.js');
+                }
+                );
+            }
+        </script>
 </head>
 
 <body>
