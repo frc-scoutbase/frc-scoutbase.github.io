@@ -4,7 +4,7 @@
   "theme_color": "#013f8a",
   "background_color": "#013f8a",
   "display": "standalone",
-  "Scope": "frc-scoutbase.github.io",
+  "Scope": "*",
   "start_url": "/index.html",
   "icons": [
     {
